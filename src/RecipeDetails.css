@@ -1,0 +1,59 @@
+.recipe-details-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.recipe-title {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: #e67e22;
+  margin-top: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+.instructions {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  border: 1px solid #ddd;
+}
+
+.back-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #cf711f;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #999;
+}
