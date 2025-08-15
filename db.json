@@ -1,0 +1,170 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "image": "https://www.allrecipes.com/thmb/a_0W8yk_LLCtH-VPqg2uLD9I5Pk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg",
+      "cuisine": "Italian",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 2,
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Parmesan Cheese",
+        "Pancetta",
+        "Black Pepper"
+      ],
+      "instructions": "Boil pasta. Cook pancetta. Mix eggs and cheese. Combine all with pepper."
+    },
+    {
+      "id": 2,
+      "name": "Chicken Biryani",
+      "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg",
+      "cuisine": "Indian",
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 4,
+      "ingredients": [
+        "Basmati Rice",
+        "Chicken",
+        "Spices",
+        "Yogurt",
+        "Onion",
+        "Tomato"
+      ],
+      "instructions": "Marinate chicken. Fry onions. Cook rice. Layer and cook everything together."
+    },
+    {
+      "id": 3,
+      "name": "Paneer Butter Masala",
+      "image": "https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg",
+      "cuisine": "Indian",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 3,
+      "ingredients": [
+        "Paneer",
+        "Tomato",
+        "Cream",
+        "Butter",
+        "Spices"
+      ],
+      "instructions": "Cook tomato gravy. Add cream, butter, and spices. Add paneer and simmer."
+    },
+    {
+      "id": 4,
+      "name": "Veg Pulao",
+      "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2019/11/Veg-Pulao-2.jpg",
+      "cuisine": "Indian",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "ingredients": [
+        "Rice",
+        "Mixed Vegetables",
+        "Spices",
+        "Ghee"
+      ],
+      "instructions": "Sauté veggies. Add rice and spices. Cook with water or stock."
+    },
+    {
+      "id": 5,
+      "name": "Pancakes",
+      "image": "https://www.bhg.com/thmb/B1Mbx1q9AgIEJ8PbQpPq0QPs820=/4000x0/filters:no_upscale():strip_icc()/bhg-recipe-pancakes-waffles-pancakes-Hero-01-372c4cad318d4373b6288e993a60ca62.jpg",
+      "cuisine": "American",
+      "prepTime": 10,
+      "cookTime": 10,
+      "servings": 4,
+      "ingredients": [
+        "Flour",
+        "Eggs",
+        "Milk",
+        "Sugar",
+        "Baking Powder"
+      ],
+      "instructions": "Mix ingredients. Pour on hot pan. Flip and cook until golden."
+    },
+    {
+      "id": 6,
+      "name": "Chole Bhature",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/88/39/af/must-try.jpg",
+      "cuisine": "Indian",
+      "prepTime": 25,
+      "cookTime": 30,
+      "servings": 3,
+      "ingredients": [
+        "Chickpeas",
+        "Onion",
+        "Tomato",
+        "Spices",
+        "Flour (for Bhature)"
+      ],
+      "instructions": "Cook chickpeas in spiced gravy. Fry bhature. Serve hot."
+    },
+    {
+      "id": 7,
+      "name": "Grilled Cheese Sandwich",
+      "image": "https://www.bhg.com/thmb/H6G2G-KzMaxmin4WJRYHZU4-oaQ=/1244x0/filters:no_upscale():strip_icc()/grilled-cheese-sandwiches-RU197054-0026ddec06634f3eb9b1a3649a114e3d.jpg",
+      "cuisine": "American",
+      "prepTime": 5,
+      "cookTime": 7,
+      "servings": 1,
+      "ingredients": [
+        "Bread",
+        "Cheese",
+        "Butter"
+      ],
+      "instructions": "Butter bread. Add cheese. Grill until golden and melted."
+    },
+    {
+      "id": 8,
+      "name": "Masala Dosa",
+      "image": "https://vismaifood.com/storage/app/uploads/public/8b4/19e/427/thumb__700_0_0_0_auto.jpg",
+      "cuisine": "South Indian",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 2,
+      "ingredients": [
+        "Dosa batter",
+        "Potato",
+        "Onion",
+        "Spices"
+      ],
+      "instructions": "Cook dosa. Add potato masala. Fold and serve with chutney."
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Brownies",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROIZoe7A1RqRAdzhtO5-m0dWuCN63dhgk5dw&s",
+      "cuisine": "Dessert",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 9,
+      "ingredients": [
+        "Cocoa",
+        "Flour",
+        "Sugar",
+        "Eggs",
+        "Butter"
+      ],
+      "instructions": "Mix ingredients. Pour in pan. Bake until set."
+    },
+    {
+      "id": 10,
+      "name": "Caesar Salad",
+      "image": "https://www.maggi.co.uk/sites/default/files/srh_recipes/3ee1954a36009dd59be2d362a2a44cf6.jpg",
+      "cuisine": "Italian",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 2,
+      "ingredients": [
+        "Romaine lettuce",
+        "Croutons",
+        "Parmesan",
+        "Caesar dressing"
+      ],
+      "instructions": "Toss lettuce with dressing. Add croutons and cheese. Serve chilled."
+    }
+  ]
+}
