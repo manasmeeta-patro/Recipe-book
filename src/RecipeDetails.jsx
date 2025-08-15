@@ -6,12 +6,14 @@ export default function RecipeDetails() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
   const navigate = useNavigate();
+  // for deploy environment variable
+const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch(`http://localhost:3000/recipes/${id}`)
+    fetch(`${API_URL}recipes/${id}`)
       .then((res) => res.json())
       .then((data) => setRecipe(data));
-  }, [id]);
+  }, [id,API_URL]);
 
   if (!recipe) {
     return <h2 className="loading">Loading recipe details...</h2>;

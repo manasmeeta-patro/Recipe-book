@@ -5,9 +5,11 @@ import SearchBar from "./SearchBar";
 export default function RecipeList() {
   const [recipes, setRecipes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  // for deploy environment variable
+const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch("http://localhost:3000/recipes")
+    fetch("${API_URL}recipes")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);

@@ -9,9 +9,14 @@ export default function EditRecipe() {
   const [image, setImage] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [steps, setSteps] = useState("");
+  // for deploying to othyer app
+  const API_URL = import.meta.env.VITE_API_URL;
+  // const url = `${API_URL}/recipes/${id}`;
 
   useEffect(() => {
-    fetch(`http://localhost:3000/recipes/${id}`)
+
+
+    fetch(`${API_URL}/recipes/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Recipe not found");
         return res.json();
@@ -26,7 +31,7 @@ export default function EditRecipe() {
         alert("Error loading recipe",err);
         navigate("/");
       });
-  }, [id, navigate]);
+  }, [id, navigate, API_URL]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,7 +43,7 @@ export default function EditRecipe() {
       steps,
     };
 
-    const res = await fetch(`http://localhost:3000/recipes/${id}`, {
+    const res = await fetch(`${API_URL}/recipes/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

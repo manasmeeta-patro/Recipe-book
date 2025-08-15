@@ -8,7 +8,7 @@ import PageNotFound from "./PageNotFound";
 export default function App() {
   return (
     <div className="App">
-      <h1>🍲 Recipe Book</h1>
+      <h1 style={{textAlign:'center'}}>🍲 Recipe Book</h1>
       <Routes>
         <Route path="/" element={<RecipeList />} />
         <Route path="/recipe/:id" element={<RecipeDetails />} />
