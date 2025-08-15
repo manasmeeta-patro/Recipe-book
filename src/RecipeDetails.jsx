@@ -7,7 +7,7 @@ export default function RecipeDetails() {
   const [recipe, setRecipe] = useState(null);
   const navigate = useNavigate();
   // for deploy environment variable
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL; 
 
   useEffect(() => {
     fetch(`${API_URL}recipes/${id}`)
