@@ -6,5 +6,10 @@
   },
   "dependencies": {
     "json-server": "^0.17.3"
-  }
+  },
+  "description": "📌 Project Description: CookingBook is a React-based web application that allows users to browse, view, search, and add delicious recipes. The app is designed for home cooks, food bloggers, or anyone looking to manage their favorite dishes in one place.",
+  "main": "eslint.config.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
