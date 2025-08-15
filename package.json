@@ -1,15 +1,19 @@
 {
-  "name": "recipe-backend",
-  "version": "1.0.0",
+  "name": "cookingbook",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "json-server": "^0.17.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "description": "📌 Project Description: CookingBook is a React-based web application that allows users to browse, view, search, and add delicious recipes. The app is designed for home cooks, food bloggers, or anyone looking to manage their favorite dishes in one place.",
-  "main": "eslint.config.js",
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^3.1.0"
+  }
 }
+
