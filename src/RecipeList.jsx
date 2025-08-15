@@ -1,75 +1,47 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
 
 export default function RecipeList() {
+  const API_URL = import.meta.env.VITE_API_URL;
   const [recipes, setRecipes] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  // for deploy environment variable
-const API_URL = import.meta.env.VITE_API_URL;
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("${API_URL}recipes")
-      .then((res) => res.json())
-      .then((data) => setRecipes(data));
-  }, []);
+    const fetchRecipes = async () => {
+      try {
+        const res = await fetch(`${API_URL}/recipes`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        setRecipes(data);
+      } catch (err) {
+        console.error("Failed to load recipes:", err);
+        alert("Error fetching recipes");
+      }
+    };
+    fetchRecipes();
+  }, [API_URL]);
 
-  // ✅ Always filter based on current searchTerm (live)
-  const filteredRecipes = recipes.filter((recipe) =>
-    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredRecipes = recipes.filter(r =>
+    r.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  // Optional: Search button functionality (can be used for analytics, etc.)
-  const handleButtonClick = () => {
-    console.log("Search button clicked with:", searchTerm);
-    // You can even add category/ingredient-based logic here later
-  };
-
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>All Recipes</h2>
-
-      <SearchBar
-        searchTerm={searchTerm}
-        onSearch={setSearchTerm}
-        onButtonClick={handleButtonClick}
+    <div>
+      <h2>Recipes</h2>
+      <input
+        type="text"
+        placeholder="Search recipe"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
       />
-
-      {filteredRecipes.length === 0 ? (
-        <p>No recipes found.</p>
-      ) : (
-        filteredRecipes.map((recipe) => (
-          <div
-            key={recipe.id}
-            style={{
-              border: "1px solid gray",
-              margin: "10px 0",
-              padding: "10px",
-              borderRadius: "5px",
-            }}
-          >
-            <h3>{recipe.name}</h3>
-            <img src={recipe.image} alt={recipe.name} width={150} />
-            <p>{recipe.ingredients}</p>
-            <Link to={`/recipe/${recipe.id}`}>👀 View Details</Link>
+      <div>
+        {filteredRecipes.map(r => (
+          <div key={r.id}>
+            <h3>{r.name}</h3>
+            <img src={r.image} alt={r.name} width={200} />
+            <p><Link to={`/recipes/${r.id}/edit`}>Edit</Link></p>
           </div>
-        ))
-      )}
-
-      <div style={{ marginTop: "30px" }}>
-        <Link
-          to="/add"
-          style={{
-            display: "inline-block",
-            padding: "10px 15px",
-            backgroundColor: "#28a745",
-            color: "white",
-            textDecoration: "none",
-            borderRadius: "5px",
-          }}
-        >
-          ➕ Add New Recipe
-        </Link>
+        ))}
       </div>
     </div>
   );
